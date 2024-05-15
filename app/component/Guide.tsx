@@ -47,6 +47,7 @@ const Guide = () => {
             </div>
           </div>
         </div>
+        
       </div>
     </section>
   );
