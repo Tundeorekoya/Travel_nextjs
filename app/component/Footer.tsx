@@ -44,17 +44,16 @@ const Footer = () => {
             <FooterColumn title={SOCIALS.title}>
               <ul className="regular-14 flex gap-4 text-gray-30">
                 {SOCIALS.links.map((link) => (
-                  <Link
-                    href="/"
-                    key={link}
-                  >
-                    <Image src={link} alt="logo" width={24} height={24}/>
+                  <Link href="/" key={link}>
+                    <Image src={link} alt="logo" width={24} height={24} />
                   </Link>
                 ))}
               </ul>
             </FooterColumn>
           </div>
         </div>
+        <div className="border bg-grey-20" />
+        <p className="regular-14 w-full text-center text-gray-20 ">copyright 2024</p>
       </div>
     </footer>
   );
@@ -67,7 +66,7 @@ type FooterColumnProps ={
 const FooterColumn = ({ title, children }:FooterColumnProps) => {
 
   return(
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-5 ">
       <h4 className="bold-18 whitespace-nowrap">{title}</h4>
       {children}
     </div>
